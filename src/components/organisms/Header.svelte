@@ -1,18 +1,13 @@
 <script>
-	import Title from '../atoms/Title.svelte';
-	import Logo from '../atoms/Logo.svelte';
+	import Title from '../molecules/Title.svelte';
+	import Icon from '@iconify/svelte';
 </script>
 
 <body>
-	<div class=" h-16 shadow border-solid border-b border-gray-300">
-		<div class="pl-4 py-3 flex items-center mb-1 ">
-			<Logo
-				src="https://pbs.twimg.com/profile_images/1090585340081893376/39fZn894.jpg"
-				width="40"
-			/>
-			<div class="pl-3">
-				<Title title={'HoloTube'} />
-			</div>
+	<div class=" h-16 shadow border-solid border-b border-gray-300 flex justify-between items-center">
+		<Title />
+		<div class="justify-end pr-3">
+			<Icon icon="heroicons-outline:menu" width="32" />
 		</div>
 	</div>
 </body>

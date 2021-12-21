@@ -1,6 +1,6 @@
 <script>
 	import Title from '../molecules/Title.svelte';
-	import Icon from '@iconify/svelte';
+	import MenuButton from '../atoms/MenuButton.svelte';
 </script>
 
 <body>
@@ -9,7 +9,12 @@
 			<Title />
 		</div>
 		<div class="justify-end pr-5">
-			<Icon icon="heroicons-outline:menu" width="32" />
+			<MenuButton
+				width="32"
+				onClick={() => {
+					console.log('Menu button clicked');
+				}}
+			/>
 		</div>
 	</div>
 </body>

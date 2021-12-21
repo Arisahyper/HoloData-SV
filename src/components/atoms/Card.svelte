@@ -10,7 +10,7 @@
 </script>
 
 <body>
-	<div class="bg-gray-300 rounded">
+	<div class="rounded shadow-md border-solid border border-gray-200">
 		<a {href}>
 			<h1 class="p-3">{title}</h1>
 			<img {src} {alt} width="100%" />

@@ -14,7 +14,7 @@
 		<a {href}>
 			<h1 class="p-3">{title}</h1>
 			<img {src} {alt} width="100%" />
-			<p class="text-gray-600 pl-3 pt-2">{date}</p>
+			<p class="text-gray-600 pl-3 pt-2 tracking-wider">{date}</p>
 			<p class="p-3">{description}</p>
 		</a>
 	</div>

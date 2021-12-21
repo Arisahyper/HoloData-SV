@@ -3,9 +3,12 @@
 	import Headword from '../atoms/Headword.svelte';
 </script>
 
-<div class="pl-4 flex items-center">
-	<Logo src="https://pbs.twimg.com/profile_images/1090585340081893376/39fZn894.jpg" width="40" />
-	<div class="pl-3">
+<div class="flex items-center">
+	<Logo
+		src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/1702px-Svelte_Logo.svg.png"
+		width="32"
+	/>
+	<div class="pl-5">
 		<Headword title={'HoloTube'} />
 	</div>
 </div>

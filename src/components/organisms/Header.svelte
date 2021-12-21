@@ -4,7 +4,7 @@
 </script>
 
 <body>
-	<div class="bg-gray-200 h-16">
+	<div class=" h-16 shadow border-solid border-b border-gray-300">
 		<div class="pl-4 py-3 flex items-center mb-1 ">
 			<Logo
 				src="https://pbs.twimg.com/profile_images/1090585340081893376/39fZn894.jpg"

@@ -3,5 +3,5 @@
 </script>
 
 <body>
-	<h1 class="text-3xl tracking-wide font-semibold">{title}</h1>
+	<h1 class="text-2xl tracking-wide font-bold">{title}</h1>
 </body>

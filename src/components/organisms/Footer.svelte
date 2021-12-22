@@ -1,0 +1,18 @@
+<script lang="ts">
+	const year = new Date().getFullYear();
+</script>
+
+<body>
+	<div class="h-10 leading-10 text-sm shadow border-solid border-t border-gray-300">
+		<div class="text-center object-bottom">
+			<a href="https://arisahyper.com">
+				<p>
+					(c) arisahyper.com {year}
+				</p>
+			</a>
+		</div>
+	</div>
+</body>
+
+<style>
+</style>

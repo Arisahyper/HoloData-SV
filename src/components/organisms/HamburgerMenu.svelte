@@ -27,7 +27,7 @@
 		}
 	];
 
-	// export let onClick = () => {};
+	export let onClick = () => {};
 </script>
 
 <body>

@@ -3,6 +3,7 @@
 	import Footer from '../organisms/Footer.svelte';
 	import CardList from '../templates/CardList.svelte';
 	import HamburgerMenu from '../organisms/HamburgerMenu.svelte';
+	import { menuList } from '../../../static/data';
 
 	let isOpen: boolean = false;
 
@@ -21,6 +22,7 @@
 		/>
 		{#if isOpen}
 			<HamburgerMenu
+				{menuList}
 				onClick={() => {
 					clickHandler();
 				}}

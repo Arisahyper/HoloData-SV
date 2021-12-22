@@ -39,7 +39,7 @@
 		</div> -->
 		{#each menuList as menu}
 			<div class="m-4">
-				<a href={menu.url}>
+				<a href={menu.url} target="_blank">
 					<p class="pl-4 text-blue-500">{menu.title}</p>
 				</a>
 			</div>

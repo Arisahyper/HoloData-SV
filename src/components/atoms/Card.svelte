@@ -7,7 +7,8 @@
 	export let alt: string = '';
 	export let date: string = '2021/2/21'; // 要命名
 	export let name: string = '';
-	// export let isLive: string = '';
+	export let isLive: string = '';
+	isLive;
 </script>
 
 <body>

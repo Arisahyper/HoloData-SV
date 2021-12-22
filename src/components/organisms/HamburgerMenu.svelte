@@ -4,30 +4,21 @@
 
 	let icon = 'heroicons-outline:x';
 
-	// export let menuList = {};
 	export let menuList = [
 		{
-			title: 'ぴなちょす',
+			title: 'sample',
 			url: 'https://google.com'
 		},
 		{
-			title: 'えふあ',
+			title: 'sample',
 			url: 'https://google.com'
 		},
 		{
-			title: 'えふあ',
+			title: 'sample',
 			url: 'https://google.com'
 		},
 		{
-			title: 'えふあ',
-			url: 'https://google.com'
-		},
-		{
-			title: 'えふあ',
-			url: 'https://google.com'
-		},
-		{
-			title: 'ふゆくん',
+			title: 'sample',
 			url: 'https://google.com'
 		}
 	];

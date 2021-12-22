@@ -1,14 +1,13 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
-	import Logo from './Logo.svelte';
 	export let icon: string = 'heroicons-outline:menu';
 	export let width: string = '32';
 	let color = '#000';
 
-	function overHandler(event: MouseEvent) {
+	function overHandler() {
 		color = '#0169ff';
 	}
-	function outHandler(event: MouseEvent) {
+	function outHandler() {
 		color = '#000';
 	}
 	export let onClick: () => void = () => {};

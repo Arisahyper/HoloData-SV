@@ -9,14 +9,3 @@
 >
 	<p class="my-2 mx-5 text-white">{text}</p>
 </button>
-
-<!-- <script>
-	import Button from '../components/atoms/Button.svelte';
-</script>
-
-<Button
-	onClick={() => {
-		console.log('click');
-	}}
-	text={'Button'}
-/> -->

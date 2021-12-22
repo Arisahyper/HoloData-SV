@@ -15,7 +15,6 @@
 	<div class="">
 		{#await promise}
 			<div class="text-center">
-				<!-- <p>Loading...</p> -->
 				<img
 					width="100%"
 					src="https://c.tenor.com/ugHMd4srOb8AAAAd/minato-aqua-hololive.gif"
@@ -24,9 +23,8 @@
 			</div>
 		{:then dateGroupList}
 			{#each dateGroupList as date}
-				<div class=" border-b border-gray-400 w-1/3 ml-3 pt-3">
+				<div class=" border-b border-gray-400 w-1/3 ml-4 pt-3">
 					<h1 class="text-3xl">{date.displayDate}</h1>
-					<!-- <h1 class="text-3xl">{date.displayDate.text()}</h1> -->
 				</div>
 				<div class="flex flex-wrap">
 					{#each date.videoList as data}

@@ -1,7 +1,8 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
 	import Logo from './Logo.svelte';
-	export let width: string = '24';
+	export let icon: string = 'heroicons-outline:menu';
+	export let width: string = '32';
 	let color = '#000';
 
 	function overHandler(event: MouseEvent) {
@@ -15,6 +16,6 @@
 
 <div on:mouseover={overHandler} on:mouseout={outHandler} on:focus on:blur>
 	<button class="flex" on:click={onClick}>
-		<Icon icon="heroicons-outline:menu" {width} {color} />
+		<Icon {icon} {width} {color} />
 	</button>
 </div>

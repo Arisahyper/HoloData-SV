@@ -22,7 +22,7 @@
 				/>
 			</div>
 		{:then dateGroupList}
-			{#each dateGroupList as date}
+			{#each [...dateGroupList].reverse() as date}
 				<div class=" border-b border-gray-400 w-1/3 ml-4 pt-3">
 					<h1 class="text-3xl">{date.displayDate}</h1>
 				</div>

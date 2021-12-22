@@ -8,3 +8,4 @@ node_modules
 !.env.example
 
 src/routes/component.svelte
+src/routes/component2.svelte

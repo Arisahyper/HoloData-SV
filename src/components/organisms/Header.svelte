@@ -2,7 +2,7 @@
 	import Title from '../molecules/Title.svelte';
 	import MenuButton from '../atoms/MenuButton.svelte';
 
-	export let onClick: () => void = () => {};
+	export let onClick = () => {};
 </script>
 
 <body>

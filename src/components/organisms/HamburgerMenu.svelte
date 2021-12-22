@@ -1,10 +1,14 @@
 <script lang="ts">
 	import MenuButton from '../atoms/MenuButton.svelte';
-	console.log('');
 
-	let icon = 'heroicons-outline:x';
+	let icon: string = 'heroicons-outline:x';
 
-	export let menuList = [
+	interface MenuList {
+		title: string;
+		url: string;
+	}
+
+	export let menuList: MenuList[] = [
 		{
 			title: 'sample',
 			url: 'https://google.com'
@@ -23,7 +27,7 @@
 		}
 	];
 
-	export let onClick: () => void = () => {};
+	export let onClick = () => {};
 </script>
 
 <body>

@@ -2,7 +2,7 @@
 	import Icon from '@iconify/svelte';
 	export let icon: string = 'heroicons-outline:menu';
 	export let width: string = '32';
-	let color = '#000';
+	let color: string = '#000';
 
 	function overHandler() {
 		color = '#0169ff';
@@ -10,7 +10,7 @@
 	function outHandler() {
 		color = '#000';
 	}
-	export let onClick: () => void = () => {};
+	export let onClick = () => {};
 </script>
 
 <div on:mouseover={overHandler} on:mouseout={outHandler} on:focus on:blur>

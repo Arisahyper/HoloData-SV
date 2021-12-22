@@ -1,6 +1,6 @@
 <script lang="ts">
 	export let text: string = 'Primary';
-	export let onClick: () => void = () => {};
+	export let onClick = () => {};
 </script>
 
 <button

@@ -8,7 +8,7 @@
 		return res.data.dateGroupList;
 	}
 
-	let promise = getHoloList();
+	let promise: Promise<any> = getHoloList();
 </script>
 
 <div>

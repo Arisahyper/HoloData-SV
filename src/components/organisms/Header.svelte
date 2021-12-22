@@ -1,6 +1,8 @@
-<script>
+<script lang="ts">
 	import Title from '../molecules/Title.svelte';
 	import MenuButton from '../atoms/MenuButton.svelte';
+
+	export let onClick: () => void = () => {};
 </script>
 
 <body>
@@ -9,12 +11,7 @@
 			<Title />
 		</div>
 		<div class="justify-end pr-5">
-			<MenuButton
-				width="32"
-				onClick={() => {
-					console.log('Menu button clicked');
-				}}
-			/>
+			<MenuButton width="32" {onClick} />
 		</div>
 	</div>
 </body>

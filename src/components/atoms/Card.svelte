@@ -12,7 +12,7 @@
 
 <body>
 	<div class="rounded shadow-md border-solid border border-gray-200">
-		<a {href}>
+		<a {href} target="_blank">
 			<div class="flex items-center pl-3 py-2">
 				<img class="rounded-full" src={icon} alt="" width="40" />
 				<h1 class="p-3 font-bold">{name}</h1>

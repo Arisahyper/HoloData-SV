@@ -32,11 +32,11 @@
 
 <body>
 	<div class="rounded-md bg-blue border border-solid border-gray-200">
-		<div class="py-3 bg-gray-100 rounded-t-md">
+		<!-- <div class="py-3 bg-gray-100 rounded-t-md">
 			<div class="flex justify-end pr-5">
 				<MenuButton {icon} {onClick} />
 			</div>
-		</div>
+		</div> -->
 		{#each menuList as menu}
 			<div class="m-4">
 				<a href={menu.url}>

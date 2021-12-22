@@ -15,7 +15,7 @@
 		<a {href}>
 			<div class="flex items-center pl-3 py-2">
 				<img class="rounded-full" src={icon} alt="" width="40" />
-				<h1 class="p-3">{name}</h1>
+				<h1 class="p-3 font-bold">{name}</h1>
 			</div>
 			<img {src} {alt} width="100%" />
 			<p class="text-gray-600 pl-3 pt-2 tracking-wider">{date}</p>

@@ -5,7 +5,7 @@
 
 <div class="flex items-center">
 	<Logo
-		src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/1702px-Svelte_Logo.svg.png"
+		src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Hololive_triangles_logo.svg/1626px-Hololive_triangles_logo.svg.png"
 		width="32"
 	/>
 	<div class="pl-5">

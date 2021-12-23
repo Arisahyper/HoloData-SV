@@ -15,7 +15,7 @@
 	<div class="rounded shadow-md border-solid border border-gray-200">
 		<a {href} target="_blank">
 			<div class="flex items-center pl-3 py-2">
-				<img class="rounded-full" src={icon} alt="" width="40" />
+				<img class="rounded-full border border-gray-400" src={icon} alt="" width="40" />
 				<h1 class="p-3 font-bold">{name}</h1>
 			</div>
 			<img {src} {alt} width="100%" />

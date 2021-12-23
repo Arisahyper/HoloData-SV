@@ -6,9 +6,15 @@
 	import { menuList } from '../../../static/data';
 
 	let isOpen: boolean = false;
+	let isSimple: boolean = false;
 
-	const clickHandler = () => {
+	const clickOpenHandler = () => {
 		isOpen = !isOpen;
+		// console.log(isOpen);
+	};
+
+	const clickSimpleHandler = () => {
+		isSimple = !isSimple;
 		// console.log(isOpen);
 	};
 </script>
@@ -17,18 +23,24 @@
 	<div class="flex-grow">
 		<Header
 			onClick={() => {
-				clickHandler();
+				clickOpenHandler();
 			}}
 		/>
 		{#if isOpen}
 			<HamburgerMenu
 				{menuList}
 				onClick={() => {
-					clickHandler();
+					clickOpenHandler();
 				}}
 			/>
 		{/if}
 		<CardList />
+
+		<!-- {#if !isOpen}
+			<CardList />
+		{:else if isOpen}
+			<div />
+		{/if} -->
 	</div>
 	<Footer />
 </body>

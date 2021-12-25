@@ -26,6 +26,11 @@
 				<div class=" border-b border-gray-400 w-1/3 ml-4 pt-3">
 					<h1 class="text-3xl">{date.displayDate}</h1>
 				</div>
+				{#if date.videoList.length == 0}
+					<div class="text-center py-10">
+						<h1>No Video</h1>
+					</div>
+				{/if}
 				<div class="flex flex-wrap">
 					{#each date.videoList as data}
 						<div class="w-full xl:w-1/4 lg:w-1/3 md:w-1/2 sm:w-1/2 py-4 px-4">

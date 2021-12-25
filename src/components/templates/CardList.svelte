@@ -4,7 +4,6 @@
 
 	async function getHoloList() {
 		const res = await axios.get('https://schedule.hololive.tv/api/list/7');
-		// console.log(res.data.dateGroupList); // debug
 		return res.data.dateGroupList;
 	}
 

@@ -1,8 +1,10 @@
 <script lang="ts">
+	import HamburgerButton from '../molecules/HamburgerButton.svelte';
 	import Title from '../molecules/Title.svelte';
-	import MenuButton from '../atoms/MenuButton.svelte';
+	import HeaderButton from './HeaderButton.svelte';
 
-	export let onClick = () => {};
+	export let onAirOnClick = () => {};
+	export let hamburgerOnClick = () => {};
 </script>
 
 <body>
@@ -11,7 +13,7 @@
 			<Title />
 		</div>
 		<div class="justify-end pr-5">
-			<MenuButton width="32" {onClick} />
+			<HeaderButton {onAirOnClick} {hamburgerOnClick} />
 		</div>
 	</div>
 </body>

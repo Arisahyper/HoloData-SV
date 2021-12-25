@@ -1,8 +1,4 @@
 <script lang="ts">
-	import MenuButton from '../atoms/MenuButton.svelte';
-
-	let icon: string = 'heroicons-outline:x';
-
 	interface MenuList {
 		title: string;
 		url: string;
@@ -27,7 +23,7 @@
 		}
 	];
 
-	export let onClick = () => {};
+	export const onClick = () => {};
 </script>
 
 <body>

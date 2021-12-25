@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Card from '../atoms/Card.svelte';
 	import axios from 'axios';
+	import { isOnAir } from '../../stores/isLive';
 
 	async function getHoloList() {
 		const res = await axios.get('https://schedule.hololive.tv/api/list/7');
@@ -31,18 +32,35 @@
 					</div>
 				{/if}
 				<div class="flex flex-wrap">
-					{#each date.videoList as data}
-						<div class="w-full xl:w-1/4 lg:w-1/3 md:w-1/2 sm:w-1/2 py-4 px-4">
-							<Card
-								icon={data.talent.iconImageUrl}
-								name={data.name}
-								href={data.url}
-								title={data.title}
-								src={data.thumbnail}
-								date={data.datetime}
-							/>
-						</div>
-					{/each}
+					{#if $isOnAir}
+						{#each date.videoList as data}
+							{#if data.isLive == true}
+								<div class="w-full xl:w-1/4 lg:w-1/3 md:w-1/2 sm:w-1/2 py-4 px-4">
+									<Card
+										icon={data.talent.iconImageUrl}
+										name={data.name}
+										href={data.url}
+										title={data.title}
+										src={data.thumbnail}
+										date={data.datetime}
+									/>
+								</div>
+							{/if}
+						{/each}
+					{:else}
+						{#each date.videoList as data}
+							<div class="w-full xl:w-1/4 lg:w-1/3 md:w-1/2 sm:w-1/2 py-4 px-4">
+								<Card
+									icon={data.talent.iconImageUrl}
+									name={data.name}
+									href={data.url}
+									title={data.title}
+									src={data.thumbnail}
+									date={data.datetime}
+								/>
+							</div>
+						{/each}
+					{/if}
 				</div>
 			{/each}
 		{:catch error}

@@ -1,15 +1,17 @@
 <script lang="ts">
-	export let url: string = 'https://www.youtube.com/watch=w_DV6f9Qf6Q';
+	export let videoUrl: string = '';
 	export let styles: string = '';
 </script>
 
-<iframe
-	class={styles}
-	width="480"
-	height="270"
-	src={'https://www.youtube.com/embed/' + url.split('=')[1]}
-	title="YouTube video player"
-	frameBorder="0"
-	allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-	allowFullScreen
-/>
+<div class="relative pt-[56.25%]">
+	<iframe
+		class="absolute w-full h-full inset-0"
+		width="560"
+		height="315"
+		src={'https://www.youtube.com/embed/' + videoUrl.split('=')[1]}
+		title="YouTube video player"
+		frameBorder="0"
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+		allowFullScreen
+	/>
+</div>

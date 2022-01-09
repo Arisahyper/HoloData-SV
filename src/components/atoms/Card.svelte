@@ -11,9 +11,13 @@
 	export let videoUrl: string = '';
 	isLive;
 
-	import { url } from '../../stores/playVideo';
+	import { url, liverName, liverIconUrl, startedAt, description } from '../../stores/playVideo';
 	const clickHandler = () => {
 		$url = videoUrl;
+		$liverName = name;
+		$liverIconUrl = icon;
+		$startedAt = date;
+		$description = title;
 	};
 </script>
 

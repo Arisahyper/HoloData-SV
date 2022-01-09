@@ -1,20 +1,33 @@
 <script lang="ts">
 	import Button from '../atoms/Button.svelte';
 	import Video from '../atoms/Video.svelte';
-	import { url } from '../../stores/playVideo';
-
-	// let url: string = 'https://www.youtube.com/watch?v=w_DV6f9Qf6Q';
-	console.log($url);
+	import Header from '../organisms/Header.svelte';
+	import { url, liverName, liverIconUrl, startedAt, description } from '../../stores/playVideo';
 </script>
 
 <body>
-	<div class="text-center">
-		<h1>Video Page</h1>
-		<a href={$url}>
+	<div class="">
+		<Header />
+
+		<div class="py-4">
+			<Video videoUrl={$url} styles="mx-auto" />
+		</div>
+
+		<div class="bg-sky-400">
+			<p>{$description}</p>
+		</div>
+
+		<img src={$liverIconUrl} class="rounded-full" alt="" width="48" />
+
+		<div class="text-left">
+			<h2>{$liverName}</h2>
+			<p>{$startedAt}</p>
+		</div>
+
+		<a href={$url} target="_blank">
 			<Button text="Youtubeで視聴" />
 		</a>
-		<div class="py-20">
-			<Video url={$url} styles="mx-auto" />
-		</div>
 	</div>
 </body>
+
+<div class="flex items-start" />

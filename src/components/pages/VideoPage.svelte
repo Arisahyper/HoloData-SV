@@ -31,7 +31,7 @@
 		{/if}
 
 		<div class="py-4">
-			<Video videoUrl={$url} styles="mx-auto" />
+			<Video videoUrl={$url} />
 		</div>
 
 		<div class="px-3 text-xl tracking-wide font-semibold text-gray-900">

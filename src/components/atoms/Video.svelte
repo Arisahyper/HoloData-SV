@@ -1,6 +1,6 @@
 <script lang="ts">
 	export let videoUrl: string = '';
-	export let styles: string = '';
+	// export let styles: string = '';
 </script>
 
 <div class="relative pt-[56.25%]">

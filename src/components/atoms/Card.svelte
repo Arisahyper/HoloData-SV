@@ -30,8 +30,8 @@
 					<h1 class="p-3 font-bold">{name}</h1>
 				</div>
 				<img {src} {alt} width="100%" />
-				<p class="text-gray-600 pl-3 pt-2 tracking-wider">{date}</p>
-				<p class="p-3">{title}</p>
+				<p class="text-gray-600 pl-3 pt-2 tracking-wider text-left">{date}</p>
+				<p class="p-3 text-left">{title}</p>
 			</button>
 		</a>
 	</div>

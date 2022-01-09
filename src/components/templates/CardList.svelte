@@ -45,6 +45,7 @@
 										title={data.title}
 										src={data.thumbnail}
 										date={data.datetime}
+										videoUrl={data.url}
 									/>
 								</div>
 							{/if}
@@ -59,6 +60,7 @@
 									title={data.title}
 									src={data.thumbnail}
 									date={data.datetime}
+									videoUrl={data.url}
 								/>
 							</div>
 						{/each}

@@ -1,5 +1,9 @@
 <script lang="ts">
 	import Button from '../atoms/Button.svelte';
+	import Video from '../atoms/Video.svelte';
+
+	// let url: string = 'https://www.youtube.com/watch?v=w_DV6f9Qf6Q';
+	let url: string = 'https://www.youtube.com/watch?v=YuuZBEQ4zh0';
 </script>
 
 <body>
@@ -9,15 +13,6 @@
 			<Button text="Youtube" />
 		</a>
 
-		<iframe
-			class="mx-auto"
-			width="480"
-			height="270"
-			src={'https://www.youtube.com/embed/' + 'w_DV6f9Qf6Q'}
-			title="YouTube video player"
-			frameBorder="0"
-			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-			allowFullScreen
-		/>
+		<Video {url} />
 	</div>
 </body>

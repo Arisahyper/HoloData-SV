@@ -47,7 +47,7 @@
 
 			<div class="text-left">
 				<h2>{$liverName}</h2>
-				<p>{$startedAt}</p>
+				<p class="text-gray-600">{$startedAt}</p>
 			</div>
 		</div>
 

@@ -10,7 +10,7 @@
 
 	let promise: Promise<any> = getHoloList();
 
-	const url = '/component';
+	const url = '/watchpage';
 </script>
 
 <div>
@@ -41,7 +41,7 @@
 									<Card
 										icon={data.talent.iconImageUrl}
 										name={data.name}
-										href="/component"
+										href="/watchpage"
 										title={data.title}
 										src={data.thumbnail}
 										date={data.datetime}
@@ -56,7 +56,7 @@
 								<Card
 									icon={data.talent.iconImageUrl}
 									name={data.name}
-									href="/component"
+									href="/watchpage"
 									title={data.title}
 									src={data.thumbnail}
 									date={data.datetime}

@@ -58,9 +58,7 @@
 		</div>
 
 		<div class="py-4 px-3">
-			<a href="/">
-				<p class="text-blue-600">← ホームに戻る</p>
-			</a>
+			<a href="/" class="text-blue-600">← ホームに戻る </a>
 		</div>
 
 		<CardList />

@@ -30,15 +30,15 @@
 			/>
 		{/if}
 
-		<div class="py-4">
+		<div class="sticky top-0">
 			<Video videoUrl={$url} />
 		</div>
 
-		<div class="px-3 text-xl tracking-wide font-semibold text-gray-900">
+		<div class="px-3 py-4 text-xl tracking-wide font-semibold text-gray-900">
 			<p>{$description}</p>
 		</div>
 
-		<div class=" border-b-2 border-gray-700 pt-4 mx-3" />
+		<div class=" border-b-2 border-gray-700 mx-3" />
 
 		<div class="flex py-4">
 			<div class="px-3">

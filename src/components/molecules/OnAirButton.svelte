@@ -1,18 +1,16 @@
 <script lang="ts">
 	import HeroIcon from '../atoms/HeroIcon.svelte';
-
-	let isOnAir = false;
-	let color = '#666';
+	import { isOnAir } from '../../stores/isLive';
 
 	export let onClick = () => {};
-	let changeColorHandler = () => {
-		isOnAir = !isOnAir;
-		isOnAir ? (color = 'red') : (color = '#666');
-	};
 </script>
 
-<button class="" on:click={onClick} on:click={changeColorHandler}>
+<button class="" on:click={onClick}>
 	<div class="pr-3">
-		<HeroIcon icon="heroicons-outline:play" width="32" {color} />
+		{#if $isOnAir}
+			<HeroIcon icon="heroicons-outline:play" width="32" color="red" />
+		{:else}
+			<HeroIcon icon="heroicons-outline:play" width="32" color="#666" />
+		{/if}
 	</div>
 </button>

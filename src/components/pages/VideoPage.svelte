@@ -2,7 +2,7 @@
 	import Button from '../atoms/Button.svelte';
 	import Video from '../atoms/Video.svelte';
 	import Header from '../organisms/Header.svelte';
-	import CardList from '../templates/CardList.svelte';
+	import SmartCardList from '../templates/SmartCardList.svelte';
 	import HamburgerMenu from '../organisms/HamburgerMenu.svelte';
 	import { menuList } from '../../../static/data';
 	import { url, liverName, liverIconUrl, startedAt, description } from '../../stores/playVideo';
@@ -61,7 +61,7 @@
 			<a href="/" class="text-blue-600">← ホームに戻る </a>
 		</div>
 
-		<CardList />
+		<SmartCardList />
 	</div>
 </body>
 

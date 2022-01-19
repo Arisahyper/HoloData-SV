@@ -38,7 +38,7 @@
 					{#if $isOnAir}
 						{#each date.videoList as data}
 							{#if data.isLive == true}
-								<div class="w-full p-1">
+								<div class="w-full py-1 px-3">
 									<SmartCard
 										icon={data.talent.iconImageUrl}
 										name={data.name}
@@ -53,7 +53,7 @@
 						{/each}
 					{:else}
 						{#each date.videoList as data}
-							<div class="w-full p-1">
+							<div class="w-full py-1 px-3">
 								<SmartCard
 									icon={data.talent.iconImageUrl}
 									name={data.name}

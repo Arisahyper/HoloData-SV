@@ -23,15 +23,19 @@
 </script>
 
 <body>
-	<div class="bg-gray-100">
-		<a {href} target="">
+	<div class="shadow">
+		<a {href} target="" on:click={clickHandler}>
 			<div class="flex">
-				<img {src} {alt} width="160px" height="90px" on:click={clickHandler} />
+				<img {src} {alt} width="160px" height="90px" />
 				<div class="flex-wrap">
 					<h1 class="pt-2 pl-2 font-bold text-xs lg:text-base">{name}</h1>
 					<!-- <p class="pl-2 py-0.5 text-gray-600 tracking-wider text-left text-sm">{date}</p> -->
 					<!-- <p class="pl-2 text-sm">{title.slice(1, 10)}</p> -->
-					<p class="pl-2 pt-1 text-xs lg:text-base">{title}</p>
+					{#if title.length > 40}
+						<p class="pl-2 text-sm">{title.slice(1, 40)}...</p>
+					{:else}
+						<p class="px-2 pt-1 text-xs lg:text-base">{title}</p>
+					{/if}
 				</div>
 			</div>
 		</a>

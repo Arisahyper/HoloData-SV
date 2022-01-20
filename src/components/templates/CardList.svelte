@@ -36,7 +36,25 @@
 				<div class="flex flex-wrap">
 					{#if $isOnAir}
 						{#each date.videoList as data}
-							{#if data.isLive == true}
+							{#if data.platformType == 1}
+								{#if data.isLive == true}
+									<div class="w-full xl:w-1/4 lg:w-1/3 md:w-1/2 sm:w-1/2 py-4 px-4">
+										<Card
+											icon={data.talent.iconImageUrl}
+											name={data.name}
+											href="/watchpage"
+											title={data.title}
+											src={data.thumbnail}
+											date={data.datetime}
+											videoUrl={data.url}
+										/>
+									</div>
+								{/if}
+							{/if}
+						{/each}
+					{:else}
+						{#each date.videoList as data}
+							{#if data.platformType == 1}
 								<div class="w-full xl:w-1/4 lg:w-1/3 md:w-1/2 sm:w-1/2 py-4 px-4">
 									<Card
 										icon={data.talent.iconImageUrl}
@@ -49,20 +67,6 @@
 									/>
 								</div>
 							{/if}
-						{/each}
-					{:else}
-						{#each date.videoList as data}
-							<div class="w-full xl:w-1/4 lg:w-1/3 md:w-1/2 sm:w-1/2 py-4 px-4">
-								<Card
-									icon={data.talent.iconImageUrl}
-									name={data.name}
-									href="/watchpage"
-									title={data.title}
-									src={data.thumbnail}
-									date={data.datetime}
-									videoUrl={data.url}
-								/>
-							</div>
 						{/each}
 					{/if}
 				</div>

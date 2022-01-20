@@ -5,12 +5,10 @@
 	export let onClick = () => {};
 </script>
 
-<button class="" on:click={onClick}>
-	<div class="pr-3">
-		{#if $isOnAir}
-			<HeroIcon icon="heroicons-outline:play" width="32" color="red" />
-		{:else}
-			<HeroIcon icon="heroicons-outline:play" width="32" color="#666" />
-		{/if}
-	</div>
+<button class="mr-3" on:click={onClick}>
+	{#if $isOnAir}
+		<HeroIcon icon="heroicons-outline:play" width="32" color="red" />
+	{:else}
+		<HeroIcon icon="heroicons-outline:play" width="32" color="#666" />
+	{/if}
 </button>
